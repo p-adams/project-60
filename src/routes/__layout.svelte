@@ -12,7 +12,7 @@
     <slot />
   </main>
 
-  <footer>
+  <footer class="footer-wrapper">
     <p>
       visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
     </p>
@@ -23,9 +23,18 @@
   .layout-wrapper {
     height: 100vh;
     display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "header-wrapper header-wrapper"
+      "sidenav-wrapper main"
+      "footer-wrapper footer-wrapper";
+
+    gap: 10px;
   }
 
   main {
+    border: 1px solid green;
+    grid-area: main;
     flex: 1;
     display: flex;
     flex-direction: column;

@@ -1,9 +1,8 @@
 <script>
   import { page } from "$app/stores";
-  import logo from "./svelte-logo.svg";
 </script>
 
-<header>
+<header class="header-wrapper">
   <div class="corner">
     <a href="https://github.com/p-adams/project-60" target="_blank">
       Project 60
@@ -36,9 +35,12 @@
 </header>
 
 <style>
-  header {
+  .header-wrapper {
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    grid-area: header-wrapper;
+    height: 75px;
   }
 
   .corner {
