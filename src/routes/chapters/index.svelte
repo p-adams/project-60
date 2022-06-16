@@ -1,7 +1,12 @@
 <script>
 </script>
 
-<article>chapter 1</article>
+<article>
+  <section>
+    <h2>Project 60</h2>
+    <p>Lorem ipsum</p>
+  </section>
+</article>
 
 <style>
   article {

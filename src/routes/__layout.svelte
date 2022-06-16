@@ -1,12 +1,12 @@
 <script>
+  // import Sidenav from "$lib/sidenav/Sidenav.svelte";
   import Header from "$lib/header/Header.svelte";
-  import Sidenav from "$lib/sidenav/Sidenav.svelte";
   import "../app.css";
 </script>
 
 <div class="layout-wrapper">
   <Header />
-  <Sidenav />
+  <!-- TODO: uncomment when support for chapters is ready <Sidenav /> -->
 
   <main>
     <slot />
@@ -23,11 +23,11 @@
   .layout-wrapper {
     height: 100vh;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "header-wrapper header-wrapper"
-      "sidenav-wrapper main"
-      "footer-wrapper footer-wrapper";
+      "header-wrapper"
+      "main"
+      "footer-wrapper";
 
     gap: 10px;
   }
