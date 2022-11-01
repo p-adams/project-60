@@ -1,21 +1,18 @@
 <script>
-  // import Sidenav from "$lib/sidenav/Sidenav.svelte";
   import Header from "$lib/header/Header.svelte";
+
   import "../app.css";
 </script>
 
 <div class="layout-wrapper">
   <Header />
-  <!-- TODO: uncomment when support for chapters is ready <Sidenav /> -->
 
   <main>
     <slot />
   </main>
 
   <footer class="footer-wrapper">
-    <p>
-      visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
-    </p>
+    <p>footer</p>
   </footer>
 </div>
 
