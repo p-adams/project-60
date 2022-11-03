@@ -37,7 +37,6 @@
     display: flex;
     justify-content: space-between;
     grid-area: header-wrapper;
-    height: 75px;
   }
 
   .corner {
