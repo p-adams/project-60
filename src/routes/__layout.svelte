@@ -44,8 +44,7 @@
 
   .main-section-container {
     width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
+    height: 100%;
   }
 
   .footer-wrapper {
