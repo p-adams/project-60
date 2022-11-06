@@ -33,9 +33,9 @@
 
 <style>
   .header-wrapper {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    background-color: #f7fafc;
     grid-area: header-wrapper;
   }
 
