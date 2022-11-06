@@ -1,11 +1,11 @@
 <script>
-  import Header from "$lib/header/Header.svelte";
+  import AppHeader from "$lib/header/app-header.svelte";
 
   import "../app.css";
 </script>
 
 <div class="layout-wrapper">
-  <Header />
+  <AppHeader />
 
   <main>
     <div class="main-section-container">
@@ -22,7 +22,7 @@
   .layout-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px 500px 20px;
+    grid-template-rows: 75px 560px 20px;
     grid-template-areas:
       "header-wrapper"
       "main"
@@ -57,11 +57,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  @media (min-width: 480px) {
-    footer {
-      padding: 40px 0;
-    }
+    align-self: flex-end;
   }
 </style>
