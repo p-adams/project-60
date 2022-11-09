@@ -5,9 +5,9 @@
 <header class="header-wrapper">
   <div class="header-items">
     <div class="corner">
-      <a href="https://github.com/p-adams/project-60" target="_blank">
-        Project 60
-      </a>
+      <div class:active={$page.url.pathname === "/"}>
+        <a sveltekit:prefetch href="/">Project 60</a>
+      </div>
     </div>
 
     <nav>
@@ -22,7 +22,6 @@
     </nav>
 
     <div class="corner">
-      <!-- TODO put something else here? github link? -->
       <a href="https://github.com/p-adams/project-60" target="_blank">
         <img class="github-link-img" src="github.png" alt="GitHub Link" />
       </a>
@@ -44,8 +43,8 @@
   }
 
   .corner {
-    /*width: 5em;*/
-    height: 3em;
+    display: flex;
+    align-items: center;
   }
 
   .corner a {
