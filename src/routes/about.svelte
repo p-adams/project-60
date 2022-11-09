@@ -15,12 +15,17 @@
 </script>
 
 <svelte:head>
-  <title>About Book</title>
-  <meta name="description" content="About book" />
+  <title>About</title>
+  <meta name="description" content="About" />
 </svelte:head>
 
 <article class="content">
-  <h3>About Book</h3>
+  <section>
+    <h2>About Author</h2>
+  </section>
+  <section>
+    <h2>About Book</h2>
+  </section>
 </article>
 
 <style>
