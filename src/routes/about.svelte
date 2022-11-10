@@ -21,10 +21,17 @@
 
 <article class="content">
   <section>
-    <h2>About Author</h2>
+    <h2 class="Title">About The Author</h2>
+    <section>
+      <h4 class="Subtitle">Ahmad al-Zahid</h4>
+      <p>
+        Ahmad al-Zahid's fullname is Abu l-'Abbas Ahmad bin Sulayman al-Zahid
+      </p>
+    </section>
   </section>
   <section>
-    <h2>About Book</h2>
+    <h2>About The Book</h2>
+    <section><h4>al-Sittin Mas'alah</h4></section>
   </section>
 </article>
 
