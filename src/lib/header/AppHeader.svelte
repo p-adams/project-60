@@ -6,17 +6,17 @@
   <div class="header-items">
     <div class="corner">
       <div class:active={$page.url.pathname === "/"}>
-        <a sveltekit:prefetch href="/">Project 60</a>
+        <a href="/">Project 60</a>
       </div>
     </div>
 
     <nav>
       <ul>
         <li class:active={$page.url.pathname === "/"}>
-          <a sveltekit:prefetch href="/">Home</a>
+          <a href="/">Home</a>
         </li>
         <li class:active={$page.url.pathname === "/about"}>
-          <a sveltekit:prefetch href="/about">About</a>
+          <a href="/about">About</a>
         </li>
       </ul>
     </nav>
@@ -31,6 +31,7 @@
 
 <style>
   .header-wrapper {
+    border: 1px solid red;
     background-color: #f7fafc;
   }
   .header-items {
