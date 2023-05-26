@@ -8,51 +8,45 @@
   <AppHeader />
 
   <main>
+    <ul class="nav">
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ul>
     <div class="main-section-container">
       <slot />
     </div>
   </main>
-
-  <footer class="footer-wrapper">
+  <footer>
     <p>footer</p>
   </footer>
 </div>
 
 <style>
   .layout-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 75px 560px 20px;
-    grid-template-areas:
-      "header-wrapper"
-      "main"
-      "footer-wrapper";
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   main {
-    grid-area: main;
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
     width: 100%;
-    max-width: 1024px;
+    height: calc(100vh - 120px);
     margin: 0 auto;
     box-sizing: border-box;
+    outline: 1px solid red;
+  }
+
+  .nav {
+    width: 170px;
   }
 
   .main-section-container {
     width: 100%;
-    height: 100%;
-  }
-
-  .footer-wrapper {
-    grid-area: footer-wrapper;
-    border: 1px solid red;
   }
 
   footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
