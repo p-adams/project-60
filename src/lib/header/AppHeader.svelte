@@ -31,7 +31,7 @@
 
 <style>
   .header-wrapper {
-    border: 1px solid red;
+    grid-area: header;
     background-color: #f7fafc;
   }
   .header-items {

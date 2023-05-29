@@ -1,44 +1,38 @@
 <script>
-  import AppHeader from "$lib/header/Appheader.svelte";
+  import AppSidebar from "$lib/AppSidebar.svelte";
+  import AppHeader from "$lib/header/AppHeader.svelte";
 
   import "../app.css";
 </script>
 
 <div class="layout-wrapper">
   <AppHeader />
+  <AppSidebar />
 
   <main>
-    <ul class="nav">
-      <li>a</li>
-      <li>b</li>
-      <li>c</li>
-    </ul>
     <div class="main-section-container">
       <slot />
     </div>
   </main>
   <footer>
-    <p>footer</p>
+    <div>footer</div>
   </footer>
 </div>
 
 <style>
   .layout-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 550px 1fr;
+    grid-template-areas:
+      "header header"
+      "side main"
+      "footer footer";
   }
 
   main {
     display: flex;
-    width: 100%;
-    height: calc(100vh - 120px);
-    margin: 0 auto;
-    box-sizing: border-box;
-    outline: 1px solid red;
-  }
-
-  .nav {
-    width: 170px;
+    grid-area: main;
   }
 
   .main-section-container {
@@ -46,11 +40,25 @@
   }
 
   footer {
+    grid-area: footer;
+  }
+  footer div {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
+  }
+  @media (max-width: 640px) {
+    .layout-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 5fr 1fr;
+      grid-template-areas:
+        "header"
+        "side"
+        "main"
+        "footer";
+    }
   }
 </style>
