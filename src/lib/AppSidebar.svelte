@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { chapters } from "../routes/chapters";
   function handleAnchorClick(event) {
     event.preventDefault();
@@ -29,9 +29,13 @@
 <style>
   aside {
     grid-area: side;
-    position: fixed;
-    margin-top: 50px;
-    height: 100%;
-    overflow-y: auto;
+  }
+  @media (min-width: 640px) {
+    aside {
+      position: fixed;
+      margin-top: 50px;
+      height: 100%;
+      overflow-y: auto;
+    }
   }
 </style>
