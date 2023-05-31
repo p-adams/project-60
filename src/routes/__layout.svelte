@@ -39,7 +39,7 @@
   @media (max-width: 640px) {
     .layout-wrapper {
       grid-template-columns: 1fr;
-      grid-template-rows: 50px 100px 1fr;
+      grid-template-rows: 50px 130px 1fr;
       grid-template-areas:
         "header"
         "side"

@@ -11,4 +11,12 @@ export const chapters = [
     title: "B",
     anchor: "b",
   },
+  {
+    title: "C",
+    anchor: "c",
+  },
+  {
+    title: "D",
+    anchor: "d",
+  },
 ];

@@ -30,12 +30,20 @@
   aside {
     grid-area: side;
   }
+  aside nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   @media (min-width: 640px) {
     aside {
       position: fixed;
       margin-top: 50px;
       height: 100%;
       overflow-y: auto;
+    }
+    aside nav ul {
+      display: flex;
+      flex-direction: column;
     }
   }
 </style>
