@@ -1,9 +1,27 @@
+<script lang="ts">
+  import { chapters } from "../routes/chapters";
+  function handleAnchorClick(event) {
+    event.preventDefault();
+    const link = event.currentTarget;
+    const anchorId = new URL(link.href).hash.replace("#", "");
+    const anchor = document.getElementById(anchorId);
+    window.scrollTo({
+      top: anchor?.offsetTop,
+      behavior: "smooth",
+    });
+  }
+</script>
+
 <aside>
   <nav>
     <ul class="nav">
-      <li>a</li>
-      <li>b</li>
-      <li>c</li>
+      {#each chapters as chapter}
+        <li>
+          <a href="#{chapter.anchor}" on:click={handleAnchorClick}
+            >{chapter.title}</a
+          >
+        </li>
+      {/each}
     </ul>
   </nav>
 </aside>
@@ -11,5 +29,9 @@
 <style>
   aside {
     grid-area: side;
+    position: fixed;
+    margin-top: 50px;
+    height: 100%;
+    overflow-y: auto;
   }
 </style>
