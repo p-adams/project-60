@@ -1,5 +1,8 @@
 <script>
   import { chapters } from "../../routes/chapters";
+  /**
+   * @param {{ preventDefault: () => void; currentTarget: HTMLAnchorElement; }} event : Event
+   */
   function handleAnchorClick(event) {
     event.preventDefault();
     const link = event.currentTarget;
