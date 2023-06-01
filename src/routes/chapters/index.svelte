@@ -2,19 +2,22 @@
 </script>
 
 <article>
-  <section>
-    <h2>Project 60</h2>
-    <p>Lorem ipsum</p>
+  <section id="introduction">
+    <h1>Introduction</h1>
+    <p>Project 60</p>
   </section>
   <section id="about">
-    <h2>About</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Convallis convallis
-      tellus id interdum velit laoreet id donec. Pharetra sit amet aliquam id.
-      Facilisi cras fermentum odio eu feugiat. Bibendum neque egestas congue
-      quisque. Lobortis scelerisque fermentum dui faucibus in ornare quam
-    </p>
+    <h1 class="Title">The Author</h1>
+    <section>
+      <h2 class="Subtitle">Ahmad al-Zahid</h2>
+      <p>
+        Ahmad al-Zahid's fullname is Abu l-'Abbas Ahmad bin Sulayman al-Zahid
+      </p>
+    </section>
+    <section>
+      <h1>The Book</h1>
+      <section><h2>al-Sittin Mas'alah</h2></section>
+    </section>
   </section>
   <section id="a">
     <h2>A</h2>

@@ -1,4 +1,5 @@
 export const chapters = [
+  { title: "Introduction", anchor: "introduction" },
   {
     title: "About",
     anchor: "about",

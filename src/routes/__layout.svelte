@@ -1,6 +1,6 @@
 <script>
-  import AppSidebar from "$lib/AppSidebar.svelte";
-  import AppHeader from "$lib/header/AppHeader.svelte";
+  import AppSidebar from "$lib/sidebar/index.svelte";
+  import AppHeader from "$lib/header/index.svelte";
 
   import "../app.css";
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import { chapters } from "../routes/chapters";
+  import { chapters } from "../../routes/chapters";
   function handleAnchorClick(event) {
     event.preventDefault();
     const link = event.currentTarget;
